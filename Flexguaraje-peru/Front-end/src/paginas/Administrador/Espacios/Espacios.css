@@ -1,0 +1,156 @@
+.espacios-page {
+    /* NO TOCARRRRRRRRRR ESTOOOOOOOOOOOOOOOOO */
+    padding: 20px;
+    margin-left: 70px;
+    margin-top: 100px;
+    flex-grow: 1;
+}
+
+/*EDITARRRR O AGREGAR TODOOOO DEBAJO DE ESTA LINEAAAAAAAAAAAAAAA */
+/* RECUERDA QUE TODO LOS CSS ESTAN VINCULADO AL PARECER, NO ES COMO EN HTML O JSP QUE ES UNO SOLO EL CSS PERO EN AQUI EN TODO JUNTO EN UNO SOLO EL CSS, QUISE SEPARAR EL ESTILO PARA QUE ASI CADA UNO TENGA SU PROPIO ESTILO PERO NOSE PUDO, PROXIMAMENTE BUSCARE Y INVESTIGARE PARA HACER ESO XD */
+
+/* COMENZARRRRRRRRRRR TU TRABAJOOOOO DE AQUIIII PARA ABAJOOOOOOOOOOOOO */
+
+/* TITULOOOOOOO */
+.title-espacios {
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-bottom: 5px solid black;
+    text-align: center;
+    width: 460px;
+    margin: 30px auto 30px auto;
+    color: #333;
+    vertical-align: middle;
+
+}
+
+/* FILTROSSSSS */
+.filtro-container {
+    background-color: #b2c5d8;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+
+.form-label {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.form-select {
+    width: 200px;
+    padding: 0.5rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* BOTONESSSSSSSSSSSSSSSSSSS-ACCIONES */
+
+.btn-acciones {
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    display: flex;
+    gap: 30px;
+
+}
+
+.btn-agregar {
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.btn-actualizar {
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+}
+
+.btn-eliminar {
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* TABLASSSSSSSS */
+.table {
+    margin-top: 20px;
+}
+
+.tabla-espacios th,
+.tabla-espacios td {
+    /* Centra verticalmente */
+    vertical-align: middle;
+}
+
+/* VENTANAAAAAA FLOTANTEEEEEEEEEEEE */
+.modal-backdrop {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(160, 157, 157, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-backdrop h3 {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.modal-backdrop label {
+    font-weight: 500;
+}
+
+.select-espacios {
+    width: 200px;
+    text-align: center;
+    margin: 15px auto;
+    display: flex;
+    font-size: 15px;
+    padding: 10px;
+}
+
+/* AGREGARRRRRRRRRRRRRRRRRR BTN */
+.modal-btn {
+    display: flex;
+    margin: 10px auto;
+}
+
+.modal-btn .btn {
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 10px;
+}
+
+/* ACTUALIZARRRRRRRRRRR BTN */
+
+.modal-backdrop label {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.modal-backdrop select {
+    display: flex;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto;
+    font-size: 1rem;
+}
+
+/* VER MASSSSSSSSSSSSSSSS */
+.modal-backdrop p {
+    font-size: 2rem;
+    margin: 10px;
+}

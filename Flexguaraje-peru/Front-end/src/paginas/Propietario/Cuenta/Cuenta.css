@@ -1,0 +1,132 @@
+/* Estilos generales */
+.cuenta-page {
+    padding: 20px;
+    margin-left: 70px;
+    margin-top: 100px;
+    flex-grow: 1;
+}
+
+.titulo-cuenta h2 {
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-bottom: 5px solid black;
+    text-align: center;
+    width: 330px;
+    margin: 30px auto 30px auto;
+    color: #333;
+    vertical-align: middle;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(160, 157, 157, 0.893);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    overflow: auto;
+    /* Añadido para manejar desbordes */
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    /* Reducido el tamaño al 80% */
+    max-width: 500px;
+    /* Establece un ancho máximo más pequeño */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    /* Evita desbordes */
+}
+
+.modal-content h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    /* Tamaño más pequeño para el título */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+    color: #333;
+    /* Color del texto */
+    font-weight: bold;
+    /* Negrita para destacarlo */
+}
+
+.modal-content label {
+    display: block;
+}
+
+.modal-content input,
+.modal-content select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* boton de crear cuenta */
+.crear-cuenta-btn {
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    display: flex;
+}
+
+/* tablaaaaaaaaaaaaaaaaa */
+.tabla-cuenta th,
+.tabla-cuenta td {
+    /* Centra verticalmente */
+    vertical-align: middle;
+}
+
+/* Botón de estado */
+.tabla-cuenta-estado .btn {
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+/* formulario modal crear cuenta */
+.modal-footer-cuenta {
+    display: flex;
+    margin: 10px auto;
+}
+
+.modal-footer-cuenta .btn {
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+
+/* cambiar contraseña button */
+.cambiar-pass-btn {
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.botones-acciones-cuenta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}

@@ -1,0 +1,484 @@
+/* GENERALLLLLLLLLLLLLLLL */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*CABEZAAAAAAAAAAAAAAAAAAAA*/
+header {
+  width: 100%;
+  background-color: rgb(43, 166, 223);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: fixed;
+  margin-top: -100px;
+
+  z-index: 2;
+}
+
+.header-contenido {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  /* Asegura que ocupe todo el ancho */
+}
+
+/* TITULOOOOOOOOOOOOOOOO */
+header h1 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+h1 {
+  font-size: 60px;
+
+}
+
+.login-datos {
+  display: grid;
+  justify-items: right;
+  padding: 10px;
+}
+
+.login-datos h3 {
+  /* Quitar márgenes extra */
+  font-size: 18px;
+  /* Ajustar el tamaño del texto */
+  color: #fff;
+  /* Texto blanco */
+}
+
+/* Botón de cerrar sesión */
+.login-datos button {
+  background-color: #ff6666;
+  /* Fondo rojo */
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  /* Texto blanco */
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  width: 120px;
+  /* Transición suave */
+}
+
+.login-datos button:hover {
+  background-color: #e60000;
+  /* Fondo rojo más oscuro al pasar el cursor */
+}
+
+
+/* LISTAAAAAAAAAAAAAAAAAAAAA */
+
+/* Estado base del menú */
+.vertical-menu {
+  height: 100vh;
+  position: fixed;
+  margin-top: 100px;
+  top: 0;
+  left: 0;
+  background-color: rgb(91, 195, 243);
+  font-family: cursive;
+  z-index: 2;
+  overflow: hidden;
+
+  /* Transición para expandir/retraer */
+  transition: width 0.3s ease;
+}
+
+/* Menú colapsado */
+.vertical-menu.collapsed {
+  width: 70px;
+}
+
+/* Menú expandido */
+.vertical-menu.expanded {
+  width: 230px;
+}
+
+/* Imagen del botón de colapso */
+.logo-container {
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.logo-img {
+  width: 40px;
+  height: 40px;
+}
+
+/* Estilo de los botones del acordeón */
+.accordion-button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: left;
+
+  /* Transición al expandir */
+  transition: all 0.3s ease;
+}
+
+/* Letras cortas (P y A) */
+.accordion-button .short-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  width: 40px;
+
+  /* Ocultar las letras cuando está expandido */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.vertical-menu.expanded .accordion-button .short-label {
+  display: none;
+  /* Ocultar letras en estado expandido */
+}
+
+/* Palabras completas (Propietario y Administrador) */
+.accordion-button .full-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 15px;
+}
+
+.vertical-menu.expanded .accordion-button .full-label {
+  opacity: 1;
+  /* Mostrar palabras completas en estado expandido */
+}
+
+/* Transiciones suaves para las opciones */
+
+
+/* Opciones del menú */
+.menu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Botón del acordeón (estado base) */
+.accordion-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 70px;
+  /* Ancho por defecto (colapsado) */
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: left;
+
+  /* Transición para el ancho */
+  transition: width 0.3s ease;
+}
+
+/* Botón del acordeón cuando el menú está expandido */
+.vertical-menu.expanded .accordion-button {
+  width: 230px;
+  /* Ancho cuando el menú está expandido */
+}
+
+/* Ocultar flecha por defecto cuando está colapsado */
+.accordion-button::after {
+  display: none;
+  /* Ocultar flecha */
+}
+
+.vertical-menu.expanded .accordion-button::after {
+  display: inline-block;
+  /* Mostrar flecha cuando está expandido */
+  transition: all 0.3s ease;
+}
+
+.vertical-menu.expanded .accordion-button .short-label {
+  opacity: 0;
+  /* Ocultar letras en estado expandido */
+}
+
+
+.vertical-menu.expanded .accordion-button .full-label {
+  opacity: 1;
+  /* Mostrar palabras completas en estado expandido */
+}
+
+/* Eliminar el efecto hover del botón del acordeón */
+.accordion-button:hover {
+  background-color: transparent !important;
+  /* Sin fondo */
+  color: inherit;
+  /* Mantener el color del texto */
+  box-shadow: none !important;
+  /* Sin sombras */
+}
+
+/* Eliminar el efecto al presionar */
+.accordion-button:focus {
+  background-color: transparent !important;
+  /* Sin fondo */
+  color: inherit;
+  /* Mantener el color del texto */
+  box-shadow: none !important;
+  /* Sin sombras */
+  outline: none !important;
+  /* Sin contorno */
+}
+
+/* Botón colapsado sin hover o efecto visual */
+.accordion-button.collapsed {
+  background-color: transparent !important;
+  color: inherit;
+  box-shadow: none;
+  outline: none;
+}
+
+/* Desactivar cualquier transición de color */
+.accordion-button {
+  transition: none !important;
+}
+
+/* Botón del acordeón sin color de fondo */
+.accordion-button {
+  background-color: transparent !important;
+  /* Sin fondo */
+  border: none !important;
+  /* Sin bordes */
+  box-shadow: none !important;
+  /* Sin sombra */
+  color: inherit;
+  /* Mantener el color del texto */
+  transition: none !important;
+  /* Desactivar transiciones */
+}
+
+/* Botón del acordeón colapsado sin fondo */
+.accordion-button.collapsed {
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Eliminar fondo al hacer hover */
+.accordion-button:hover {
+  background-color: transparent !important;
+  color: inherit;
+  /* Mantener el color del texto */
+}
+
+/* Eliminar fondo al enfocar (focus) */
+.accordion-button:focus {
+  background-color: transparent !important;
+  color: inherit;
+  box-shadow: none !important;
+  outline: none !important;
+  /* Sin contorno */
+}
+
+/* Flecha del acordeón (desaparece en colapsado, visible en expandido) */
+.accordion-button::after {
+  display: none;
+  /* Sin flecha en el estado colapsado */
+}
+
+.vertical-menu.expanded .accordion-button::after {
+  display: inline-block;
+  /* Mostrar flecha cuando está expandido */
+  transition: all 0.3s ease;
+}
+
+/* Evitar color de fondo en el estado activo */
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+  /* Sin fondo al expandir */
+  color: inherit;
+  /* Mantener el color del texto */
+}
+
+/* Letras cortas (P y A) */
+.accordion-button .short-label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  width: 40px;
+
+  /* Ocultar las letras cuando está expandido */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.vertical-menu.expanded .accordion-button .short-label {
+  opacity: 0;
+  /* Ocultar letras en estado expandido */
+}
+
+
+.vertical-menu.expanded .accordion-button .full-label {
+  opacity: 1;
+  /* Mostrar palabras completas en estado expandido */
+}
+
+/* Estilo base para los elementos del menú */
+.menu-item {
+  font-size: 16px;
+  color: #333;
+  text-align: left;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+  width: 100%;
+  /* Bordes redondeados para el hover */
+}
+
+/* Hover para los elementos del menú */
+.menu-item:hover {
+  background-color: #007bff;
+  /* Fondo azul al pasar el cursor */
+  color: #fff;
+  /* Texto blanco */
+  width: 100%;
+}
+
+/* Estilo para los enlaces dentro de los elementos */
+.menu-item a {
+  text-decoration: none;
+  color: inherit;
+  /* Hereda el color del elemento padre */
+  display: block;
+  /* Asegura que el enlace ocupe todo el espacio del elemento */
+  width: 100%;
+  height: 100%;
+}
+
+/* Evitar subrayado al hacer hover en el enlace */
+.menu-item a:hover {
+  text-decoration: none;
+}
+
+.accordion-body {
+  padding: 13px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Fondo negro translúcido */
+  z-index: 1;
+  /* Detrás del menú */
+}
+
+.overlay.active {
+  display: block;
+  /* Mostrar el overlay cuando el menú está expandido */
+}
+
+/* EL CONTENIDOOOOOOOO DE INICIO OSEA LA PALABRA MOTIVACIONAL Y ESO PZ XD */
+.contenido-inicio {
+  padding: 20px;
+  margin-left: 70px;
+  margin-top: 100px;
+  flex-grow: 1;
+  color: #333;
+  padding: 40px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.intro-text h2 {
+  font-size: 2.5rem;
+  color: #2a82d7;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.empresa-nombre {
+  color: #d96b32;
+}
+
+.subtitulo {
+  font-size: 1.3rem;
+  color: #444;
+  margin-top: 10px;
+}
+
+.motivacion p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #555;
+  margin: 20px 0;
+}
+
+.motivacion p:last-child {
+  font-style: italic;
+  color: #777;
+}
+
+.cierre p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.motivacion p,
+.cierre p {
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cierre h3 {
+  font-size: 2rem;
+  margin: 30px;
+}
+
+input {
+  text-align: center;
+}
+
+/* LOGIN Y CAMBIO DE CONTRASEÑA */
+.toggle-text {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  font-family: cursive;
+}
+
+.toggle-text:hover {
+  color: #333edb;
+}
+
+/* NO TOCARRRRRRRRRRRR CODIGO DE AQUI PARA ARRIBA */
+/* PUEDES AGREGAR DE AQUI PARA ABAJOOOOOOOOO */

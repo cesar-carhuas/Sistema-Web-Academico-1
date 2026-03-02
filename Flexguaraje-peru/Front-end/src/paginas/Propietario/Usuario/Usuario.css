@@ -1,0 +1,97 @@
+.usuario-page {
+    padding: 20px;
+    margin-left: 70px;
+    margin-top: 100px;
+    flex-grow: 1;
+}
+
+/* TITULO USUARIO */
+.titulo-usuario {
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-bottom: 5px solid black;
+    text-align: center;
+    width: 320px;
+    margin: 30px auto 30px auto;
+    color: #333;
+    vertical-align: middle;
+}
+
+/* botones de acciones */
+.acciones-usuario {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* acciones de crear y actualizar */
+.acciones-btn-usuario {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+.acciones-btn-usuario .btn {
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* formulario buscar usuario DNI */
+.acciones-formulario-buscar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.acciones-formulario-buscar input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 150px;
+}
+
+.btn-acciones-buscar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-acciones-buscar .btn {
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* tablaaaaaaaaaaaaaaaa usuario */
+.tabla-usuario th,
+.tabla-usuario td {
+    /* Centra verticalmente */
+    vertical-align: middle;
+}
+
+
+/* actualizar usuario css */
+.btn-actualizar-usuario {
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.actualizar-btn-usuario .btn {
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* BOTON DE ESTADO */
+.tabla-estado-usuario .btn {
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}

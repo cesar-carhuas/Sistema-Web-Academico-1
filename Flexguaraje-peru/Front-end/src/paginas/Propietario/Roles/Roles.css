@@ -1,0 +1,74 @@
+.roles-page {
+    padding: 20px;
+    margin-left: 70px;
+    margin-top: 100px;
+    flex-grow: 1;
+}
+
+/* TITULOOOOOO */
+.titulo-roles {
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-bottom: 5px solid black;
+    text-align: center;
+    width: 300px;
+    margin: 30px auto 30px auto;
+    color: #333;
+    vertical-align: middle;
+}
+
+/* BOTONES DE ACCION DE ROLES */
+.button-acciones-roles {
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    display: flex;
+    gap: 30px;
+}
+
+.button-acciones-roles .btn {
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* TABLAAA ROLES */
+.tabla-roles th,
+.tabla-roles td {
+    /* Centra verticalmente */
+    vertical-align: middle;
+}
+
+.table-estado-roles .btn {
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.table-acciones-roles {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+
+.table-acciones-roles .btn {
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+/* formulario modal actualizar y crear */
+.modal-header h3 {
+    display: flex;
+    margin: 10px auto;
+}
+
+.modal-footer {
+    display: flex;
+    margin: 10px auto;
+}

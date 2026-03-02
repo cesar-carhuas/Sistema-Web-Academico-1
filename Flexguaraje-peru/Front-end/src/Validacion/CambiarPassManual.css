@@ -1,0 +1,93 @@
+.general-PassManual {
+    margin: 0;
+    position: fixed;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+        url('https://static.vecteezy.com/system/resources/previews/030/054/733/non_2x/a-large-warehouse-with-two-garage-doors-and-a-sky-ai-generated-free-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    color: #333;
+    z-index: 1000 !important;
+}
+
+.PassManual-container {
+    width: 100%;
+    max-width: 380px;
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.form-title-Manual {
+    text-align: center;
+    font-size: 34px;
+    font-weight: bold;
+    color: #2e1010;
+    margin-bottom: 20px;
+    font-family: cursive;
+}
+
+/* Aquí es donde aplicamos el estilo para el campo de entrada */
+.animated-input-PassManual {
+    width: 100%;
+    padding: 14px 12px;
+    font-size: 16px;
+    color: #333;
+    background: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Estilos cuando el campo está en foco */
+.animated-input-PassManual:focus {
+    border-color: #2e71d6;
+}
+
+.animated-button-PassManual {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+    color: #fff;
+    background: #21207c;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: cursive;
+}
+
+.animated-button-PassManual:hover {
+    background-color: #333edb;
+}
+
+/* para visualizar contraseña diseño */
+.contraseña-visible input {
+    position: relative;
+}
+
+.contraseña-visible span {
+    position: absolute;
+    left: 90%;
+    top: 25%;
+}

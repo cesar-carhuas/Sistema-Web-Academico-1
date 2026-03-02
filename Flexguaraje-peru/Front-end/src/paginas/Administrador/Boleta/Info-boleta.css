@@ -1,0 +1,50 @@
+.servicios-page {
+    padding: 20px;
+    margin-left: 70px;
+    margin-top: 100px;
+    flex-grow: 1;
+}
+
+/* titulo de info boleta */
+.title-infoboleta {
+    font-size: 2rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-bottom: 5px solid black;
+    text-align: center;
+    width: 400px;
+    margin: 30px auto 30px auto;
+    color: #333;
+    vertical-align: middle;
+}
+
+/* TABLAAAAAAAAAAAAAAAA */
+.boletas-table {
+    margin-top: 20px;
+}
+
+.boletas-table th,
+.boletas-table td {
+    /* Centra verticalmente */
+    vertical-align: middle;
+}
+
+.table-responsive {
+    overflow-x: auto;
+    /* Habilita el desplazamiento horizontal */
+    -webkit-overflow-scrolling: touch;
+    /* Suaviza el desplazamiento en dispositivos táctiles */
+    margin-bottom: 1rem;
+    /* Espaciado inferior opcional */
+    border: 1px solid #ddd;
+    /* Borde opcional para destacar el contenedor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Sombreado sutil */
+    border-radius: 8px;
+    /* Bordes redondeados */
+}
+
+.boletas-table {
+    min-width: 1000px;
+    /* Asegura que la tabla tenga un tamaño mínimo que provoque el desplazamiento */
+}
